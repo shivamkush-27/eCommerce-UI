@@ -1,0 +1,42 @@
+/* Common style for whole website to make consistency in the site */
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #7d7d7d;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: #FFC107;
+}
+
+/* Scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: 000;
+}

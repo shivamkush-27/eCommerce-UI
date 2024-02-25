@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Global CSS-->
+    <link rel="stylesheet" href="global.css">
+    <!--Internal CSS-->
+    <style>
+        .page-title-container {
+            background-image: url("media/account-login.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 5em;
+        }
+
+        .login-form-conatiner .login-form {
+            width: 35%;
+        }
+
+        @media only screen and (max-width:426px) {
+            .login-form-conatiner .login-form {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width:427px) and (max-width:1025px) {
+            .login-form-conatiner .login-form {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!--Page title and breadcrumb-->
+    <div class="page-title-container">
+        <div class="container py-4">
+            <div class="row">
+                <div class="text-center mb-3">
+                    <h2 class="text-white fs-2 text-uppercase">Account Login</h2>
+                    <nav style="--bs-breadcrumb-divider: '>'; color: aliceblue;" aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item mx-1"><a href="index.html" style="color: antiquewhite;">Home</a>
+                            </li>
+                            <li class="">></li>
+                            <li class="breadcrumb-item active text-light mx-1" aria-current="page">Login</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Login form starts-->
+    <div class="login-form-conatiner my-3">
+        <div class="container mx-auto login-form">
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label mb-0 fw-bold">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label mb-0 fw-bold">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Enter Your Password"
+                    required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100 text-uppercase fw-semibold"
+                    id="loginButton">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--Login form Ends-->
+    <div id="footer"></div>
+
+    <!--Internal Javascript-->
+    <script>
+        const emailInput = document.getElementById('inputEmail');
+        const passwordInput = document.getElementById('inputPassword');
+        const loginButton = document.getElementById('loginButton');
+
+        // Event listener to the login button
+        loginButton.addEventListener('click', function () {
+            // Get the values entered by the user
+            const enteredEmail = emailInput.value;
+            const enteredPassword = passwordInput.value;
+            // Check if input field is empty
+            if (enteredEmail == '' || enteredPassword == '') {
+                alert('All fields are required');
+            } else {
+                // Check if the email and password are correct
+                if (enteredEmail === 'admin@admin.com' && enteredPassword === '123456') {
+                    alert('Login successful');
+                } else {
+                    alert('Incorrect email or password');
+                }
+            }
+        });
+    </script>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--jQuery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--External Script-->
+    <script src="head-foot.js"></script>
+</body>
+
+</html>

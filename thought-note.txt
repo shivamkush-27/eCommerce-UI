@@ -1,0 +1,20 @@
+1. **The Header and Footer**: These are the bookends of our site, encapsulating its essence. A well-designed logo, an intuitive search bar, a menu, and a cart button form the welcoming committee in the header. In the footer, we list the categories and key links, tying a neat bow on each page.
+
+I have developed 3 different headers each for Desktop, Tablet, and Mobile devices and used media query to show specific header based on the width of the device. 
+
+2. **The Home Page**: Our digital storefront's entryway. It's where we tell our story through imagery and words. The cover image and slogan convey our brand's identity. The featured product slider sets the stage, captivating visitors.
+
+3. **Product Pages**: These are the digital aisles where visitors browse and discover. A grid layout for products, meticulously categorized, welcomes exploration.
+At some location I have used lorem ipsum(or random text for title and description of the product) whereas at some location I have used real names and description copied from websites like flipkart and amazon.
+
+4. **Contact Page**: The virtual handshake. A simple, friendly form invites communication, and a well-chosen image adds a personal touch.
+
+5. **Login Page**: The gateway to personalized experiences. We make it functional by verifying email and password, greeting success, or offering a gentle nudge when needed.
+
+6. **Cart Page**: The heart of e-commerce, where products and purchase details converge. Here, we design functionality with buttons for quantity management and deletion, leaving the shopping cart primed for future action.
+
+I have used HTML, CSS, JS, Bootstrap and Media-query for developing the frontend of this e-commerce site. I have also used jQuery to dynamically load header and footer on each page of the site. Also, I have used a Global CSS for some common HTML tags/attributes for making design consistent throughout the site. 
+
+I have downloaded all the images for the products from different sites(like unsplash, istocks, pixabay, amazon, flipkart). I have converted the images into webp extension to make them light weight so that it loads faster. My purpose for locally storing the medias is that even if the image url gets changed or it gets deleted their will be not issues with the UI of the site.
+
+I tried to make the design of this eCommerce website similar to what design was provided. However, at some instance I have used my own imagination to design the layout according to me so as to make the web layout more attractive and enhance the User experiences.

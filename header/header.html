@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- Global CSS -->
+        <link rel="stylesheet" href="../global.css">
+    <!--Internal CSS-->
+    <style>
+        .header {
+            background-color: black;
+            z-index: 10;
+        }
+
+        .nav li a {
+            color: black;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0;
+        }
+
+        /*Display only on desktop devices*/
+        @media only screen and (min-width:1023px) {
+
+            #tab-header,
+            #mob-header {
+                display: none;
+            }
+        }
+
+        /*Display only on tablet devices*/
+        @media only screen and (max-width:992px) and (min-width:650px) {
+
+            #desk-header,
+            #mob-header {
+                display: none;
+            }
+
+            .header {
+                background-color: black;
+                z-index: 10;
+            }
+        }
+
+        /*Display only on mobile devices*/
+        @media only screen and (max-width:600px) {
+
+            #desk-header,
+            #tab-header {
+                display: none;
+            }
+
+            .header {
+                background-color: black;
+                z-index: 10;
+            }
+
+            .navbar-toggler {
+                background-color: #FFC107 !important;
+            }
+            .offcanvas.offcanvas-end{
+                width: 70vw !important; /*width of the collapsed menu*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Desktop Header -->
+    <div class="header" id="desk-header">
+        <div class="row">
+            <div class="container col-lg-12 col-md-6">
+                <nav class="navbar navbar-expand-lg bg-body-dark py-0">
+                    <div class="container-fluid">
+                        <a href="../index.html">
+                            <img src="../media/fashion-logo.webp" class="navbar-brand py-0" alt="logo" width="100" height="100">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <form class="d-flex ms-auto" role="search">
+                                <input class="form-control rounded-start-3 rounded-end-0" type="search"
+                                    placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-warning rounded-start-0 rounded-end-3 fw-semibold"
+                                    type="submit">Search</button>
+                            </form>
+                            <a href="../login.html" class="btn ms-auto btn-outline-warning me-2 fw-semibold">Login</a>
+                            <a href="../cart.html" class="btn btn-lg">
+                                <i class="fa-solid fa-cart-shopping" style="color: #FFC107;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row bg-body-tertiary">
+            <div class="container col-lg-12 col-md-6">
+                <nav class=" navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 0 auto;">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../all-product.html">All Products</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Women
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../w-all-product.html">All Products</a></li>
+                                        <li><a class="dropdown-item" href="../w-shirts.html">Shirts</a></li>
+                                        <li><a class="dropdown-item" href="../w-jeans.html">Jeans</a></li>
+                                        <li><a class="dropdown-item" href="../w-skirts.html">Skirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Men
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../m-all-product.html">All Men Products</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../m-shirts.html">Shirts</a></li>
+                                        <li><a class="dropdown-item" href="../m-jeans.html">Jeans</a></li>
+                                        <li><a class="dropdown-item" href="../m-shoe.html">Shoes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../kids.html">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Desktop Header Ends -->
+
+    <!-- Tablet Header -->
+    <div class="tab-header" id="tab-header">
+        <nav class="navbar header py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand py-0" href="../index.html">
+                    <img src="../media/fashion-logo.webp" class="navbar-brand py-0" alt="logo" width="100" height="100">
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+                <a href="../login.html" class="btn btn-outline-warning fw-semibold">Login</a>
+                <a href="../cart.html" class="btn btn-lg">
+                    <i class="fa-solid fa-cart-shopping" style="color: #FFC107;"></i>
+                </a>
+            </div>
+        </nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../all-product.html">All Products</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Women
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../w-all-product.html">All Products</a></li>
+                    <li><a class="dropdown-item" href="../w-shirts.html">Shirts</a></li>
+                    <li><a class="dropdown-item" href="../w-jeans.html">Jeans</a></li>
+                    <li><a class="dropdown-item" href="../w-skirts.html">Skirts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Men
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../m-all-product.html">All Men Products</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../m-shirts.html">Shirts</a></li>
+                    <li><a class="dropdown-item" href="../m-jeans.html">Jeans</a></li>
+                    <li><a class="dropdown-item" href="../m-shoe.html">Shoes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Tablet Header Ends -->
+
+    <!-- Mobile Header -->
+    <div class="mob-header" id="mob-header">
+        <nav class="navbar header py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand py-0" href="../index.html">
+                    <img src="../media/fashion-logo.webp" class="navbar-brand py-0" alt="logo" width="100" height="100">
+                </a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../all-product.html">All Products</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Women
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../w-all-product.html">All Products</a></li>
+                                        <li><a class="dropdown-item" href="../w-shirts.html">Shirts</a></li>
+                                        <li><a class="dropdown-item" href="../w-jeans.html">Jeans</a></li>
+                                        <li><a class="dropdown-item" href="../w-skirts.html">Skirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Men
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../m-all-product.html">All Men Products</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../m-shirts.html">Shirts</a></li>
+                                        <li><a class="dropdown-item" href="../m-jeans.html">Jeans</a></li>
+                                        <li><a class="dropdown-item" href="../m-shoe.html">Shoes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../kids.html">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-warning" type="submit">Search</button>
+                            </form>
+                            <a href="../login.html"
+                                class="btn ms-auto btn-outline-warning mt-2 w-100 fw-semibold">Login</a>
+                        </div>
+                    </div>
+                    <a href="../cart.html" class="btn btn-lg">
+                        <i class="fa-solid fa-cart-shopping" style="color: #FFC107;"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile Header Ends -->
+
+</body>
+
+</html>

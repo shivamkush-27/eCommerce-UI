@@ -1,0 +1,28 @@
+/* Style for index.html */
+#carouselExampleCaptions .carousel-inner .carousel-item img{
+    height: 80vh;
+    object-fit: fill;
+    z-index: 9;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 35% !important;
+}
+/*Display only on desktop devices*/
+@media only screen and (min-width:1023px){
+    #carouselExample2, #carouselExample3{
+        display: none;
+    }
+}
+/*Display only on tablet devices*/
+@media only screen and (max-width:992px) and (min-width:650px){
+    #carouselExample1, #carouselExample3{
+        display: none;
+    }
+}
+/*Display only on mobile devices*/
+@media only screen and (max-width:600px){
+    #carouselExample1, #carouselExample2{
+        display: none;
+    }
+}

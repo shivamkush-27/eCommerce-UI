@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Jeans</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Global CSS-->
+    <link rel="stylesheet" href="global.css">
+    <!--Internal CSS-->
+    <style>
+        .all-product {
+            background-image: url("media/fashion-store.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 5em;
+        }
+
+        .product-grid-container {
+            padding: 20px 0;
+        }
+
+        .price {
+            font-size: 1em;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!--Page title and breadcrumb-->
+    <div class="all-product">
+        <div class="container py-4">
+            <div class="row">
+                <div class="text-center mb-3">
+                    <h2 class="text-white fs-2 text-uppercase">Women Jeans</h2>
+                    <nav style="--bs-breadcrumb-divider: '>'; color: aliceblue;" aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item mx-1"><a href="index.html" style="color: antiquewhite;">Home</a>
+                            </li>
+                            <li class="">></li>
+                            <li class="breadcrumb-item active text-light mx-1" aria-current="page">Women </li>
+                            <li class="">></li>
+                            <li class="breadcrumb-item active text-light mx-1" aria-current="page">Jeans</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Product Grid-->
+    <div class="product-grid-container">
+        <div class="container">
+            <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-1 g-4">
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/product1.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Full Sleeve Sweatshirt
+                            </h4>
+                            <h5 class="card-title price">₹699</h5>
+                            <p class="card-text">Create a lasting impression in this women sweatshirt. This trendy
+                                winter jackets for women is beautifully Crafted in cotton blend. </p>
+                            <button class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w1.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Zyke Women's Active Tee</h4>
+                            <h5 class="card-title price">₹799</h5>
+                            <p class="card-text">Crafted from high-quality polyester jersey with a sweat management
+                                finish, it
+                                ensures you stay comfortable during your active pursuits.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w2.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">VERO MODA Women Jeans</h4>
+                            <h5 class="card-title price">₹1999</h5>
+                            <p class="card-text">This pair offers both comfort and convenience. Made from
+                                soft and breathable cotton, these mid-rise pants are perfect for everyday wear.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w3.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Denill Women's Fashion Sandal</h4>
+                            <h5 class="card-title price">₹1499</h5>
+                            <p class="card-text">The
+                                synthetic rubber sole provides a comfortable and steady step, while the buckle closure
+                                ensures a secure and adjustable fit.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w4.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Jaipur Kurti Fit Pants
+                            </h4>
+                            <h5 class="card-title price">₹1299</h5>
+                            <p class="card-text">Elevate your style with these comfortable and versatile pants. Crafted
+                                from 100% cotton, they offer both breathability and softness.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/product6.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Skinny High Rise Jeans</h4>
+                            <h5 class="card-title price">₹699</h5>
+                            <p class="card-text">Introducing the TRANDYLOOKS Women's Skinny High Rise Black Jeans, the
+                                ultimate fashion statement for those seeking stylish look.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/product7.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">High Rise Black Jeans</h4>
+                            <h5 class="card-title price">₹699</h5>
+                            <p class="card-text">Elevate your fashion with Malachi Women's Skinny High Rise Black Jeans.
+                                These high-rise black jeans are the epitome of style and versatility.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w5.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Carlton London Flat Sandal</h4>
+                            <h5 class="card-title price">₹1399</h5>
+                            <p class="card-text">These shoes are designed for both comfort and style. They feature a
+                                rubber sole that provides a sturdy and cushioned foundation for your feet.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w6.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Isle Locada Shoulder bag</h4>
+                            <h5 class="card-title price">₹2199</h5>
+                            <p class="card-text">Isle Locada by Hidesign, is a brand that embodies the spirit of
+                                craftsmanship, sustainability, and innovative design.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/women-img/w7.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Denim Blend Standard Jacket</h4>
+                            <h5 class="card-title price">₹1299</h5>
+                            <p class="card-text">For easy and elegant Western wear, consider this stylish garment. It
+                                comes in a regular fit, with size options ranging from S to XL.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/product11.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">High Waist Mini Skirt</h4>
+                            <h5 class="card-title price">₹1199</h5>
+                            <p class="card-text">Experience both comfort and style with this high-waisted skirt.
+                                Made from skin-friendly polyester fabric, this skirt is designed for
+                                versatility.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="media/product12.webp" class="card-img-top" alt="Image of the Product" style="object-fit: contain;"
+                            height="350">
+                        <div class="card-body d-grid">
+                            <h4 class="card-title fw-semibold text-uppercase">Long Skirt with Slit</h4>
+                            <h5 class="card-title price">₹599</h5>
+                            <p class="card-text">It features an elastic waistband for a comfortable fit and is crafted
+                                from stretchable fabric, ensuring flexibility and comfort throughout the day.</p>
+                            <button href="#" class="btn btn-primary cart-add" onclick="add2cart();">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <!--jQuery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--My Script-->
+    <script>
+        function add2cart() {
+            alert('Product Added to Cart');
+        }
+    </script>
+    <!--External Script-->
+    <script src="head-foot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce - Internshala Frontend Project</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Global CSS-->
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/men-fashion-s1.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1 style="font-size: 2.5rem;">
+                        eCommerce</h1>
+                    <p>Clothes that talks on behalf of you. Something for every occasion.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="media/women-fashion-s2.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1 style="font-size: 2.5rem;">Women Fashion</h1>
+                    <p>A wide range of Women Apparels. Best Quality, Affordable Price.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="media/kids-fashion-s3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1 style="font-size: 2.5rem;">Kids Fashion</h1>
+                    <p>Best of Latest Trends in Kids Fashion. Make your kid stand out.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Featured Products-->
+    <div class="f-product bg-body-tertiary">
+        <div class="container py-4">
+            <div class="row">
+                <div class="text-center mb-3">
+                    <h2>Featured Product</h2>
+                </div>
+            </div>
+            <!--Display only on Desktop-->
+            <div id="carouselExample1" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product1.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Full Sleeve Sweatshirt</h4>
+                                        <p class="card-text">Wildcraft - Women Full Sleeve Solid Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product2.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">White Formal Shirt</h4>
+                                        <p class="card-text">Raymond -
+                                            Men Slim Fit Checkered Formal Shirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product3.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Boys Wedding Kurta</h4>
+                                        <p class="card-text">Bright Garments Dresses -
+                                            Boys Wedding Kurta and Pyjama Set</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product4.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Men Hooded Sweatshirt</h4>
+                                        <p class="card-text">TRIPR -
+                                            Men Full Sleeve Printed Hooded Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product5.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Viscose Rayon Trousers</h4>
+                                        <p class="card-text">Raymond -
+                                            Men Slim Fit Grey Viscose Rayon Trousers</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product6.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Skinny High Rise Jeans</h4>
+                                        <p class="card-text">TRANDYLOOKS -
+                                            Women Skinny High Rise Black Jeans</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product7.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">High Rise Black Jeans</h4>
+                                        <p class="card-text">Malachi -
+                                            Women Skinny High Rise Black Jeans</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product8.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Slim Mid Rise Jeans</h4>
+                                        <p class="card-text">Urbano Juniors -
+                                            Boys Slim Mid Rise Grey Jeans</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product9.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Casual T-shirt Track Pants</h4>
+                                        <p class="card-text">SmartRAHO -
+                                            Boys Casual T-shirt Track Pants</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product10.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Boys & Girl Lace Sneakers</h4>
+                                        <p class="card-text">PUMA -
+                                            Lace Sneakers For Boys & Girls</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product11.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Printed Pleated Skirt</h4>
+                                        <p class="card-text">Alisha Moda -
+                                            Girls Printed Pleated Dark Green Skirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card text-center">
+                                    <img src="media/product12.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Women Solid Pencil Skirt</h4>
+                                        <p class="card-text">ALYNE -
+                                            Women Solid Pencil Black Skirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Display only on Tablet-->
+            <div id="carouselExample2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product1.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Full Sleeve Sweatshirt</h4>
+                                        <p class="card-text">Wildcraft - Women Full Sleeve Solid Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product2.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">White Formal Shirt</h4>
+                                        <p class="card-text">Raymond -
+                                            Men Slim Fit Checkered Formal Shirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product3.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Boys Wedding Kurta</h4>
+                                        <p class="card-text">Bright Garments Dresses -
+                                            Boys Wedding Kurta and Pyjama Set</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product4.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Men Hooded Sweatshirt</h4>
+                                        <p class="card-text">TRIPR -
+                                            Men Full Sleeve Printed Hooded Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product5.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Viscose Rayon Trousers</h4>
+                                        <p class="card-text">Raymond -
+                                            Men Slim Fit Grey Viscose Rayon Trousers</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <img src="media/product6.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Skinny High Rise Jeans</h4>
+                                        <p class="card-text">TRANDYLOOKS -
+                                            Women Skinny High Rise Black Jeans</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Display only on Mobile-->
+            <div id="carouselExample3" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card text-center">
+                                    <img src="media/product1.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Full Sleeve Sweatshirt</h4>
+                                        <p class="card-text">Wildcraft - Women Full Sleeve Solid Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card text-center">
+                                    <img src="media/product2.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">White Formal Shirt</h4>
+                                        <p class="card-text">Raymond -
+                                            Men Slim Fit Checkered Formal Shirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card text-center">
+                                    <img src="media/product3.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Boys Wedding Kurta</h4>
+                                        <p class="card-text">Bright Garments -
+                                            Wedding Kurta and Pyjama Set</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card text-center">
+                                    <img src="media/product4.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Men Hooded Sweatshirt</h4>
+                                        <p class="card-text">TRIPR -
+                                            Men Full Sleeve Printed Hooded Sweatshirt</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card text-center">
+                                    <img src="media/product5.webp" class="card-img-top" alt="..." height="350"
+                                        style="object-fit: contain;">
+                                    <div class="card-body d-grid">
+                                        <h4 class="card-title">Viscose Rayon Trousers</h4>
+                                        <p class="card-text">Raymond -
+                                            Slim Fit Grey Viscose Rayon Trousers</p>
+                                        <button class="btn btn-primary" onclick="add2cart();">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black p-3 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--jQuery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- header and footer dynamically -->
+    <script src="/head-foot.js"></script>
+    <!--My Script-->
+    <script>
+        function add2cart(){
+            alert('Product Added to Cart'); //For alerting user when they click on Add to Cart
+        }
+    </script>
+</body>
+
+</html>
